@@ -1,0 +1,15 @@
+.app_header {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.primary_menu {
+	height: 40px;
+	background: #e0e3ee;
+	border-radius: 0 0 10px 10px;
+}
+
+.sub_menu {
+	display: flex;
+	justify-content: space-between;
+}
