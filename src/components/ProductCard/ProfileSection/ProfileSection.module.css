@@ -1,0 +1,21 @@
+.profile {
+	margin: 20px;
+	font-size: 15px;
+}
+
+.profile__item {
+	margin: 10px 0;
+}
+
+.profile__item label {
+	color: #969dc3;
+}
+
+.profile__item div {
+	margin-left: 10px;
+}
+
+.profile__name {
+	font-size: 16px;
+	font-weight: 500;
+}
