@@ -2,23 +2,34 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import initProductCards from '../../data/ProductList.json'
 import { IProductCard } from '../../models/IProductCard'
 
-const initialState: IProductCard[] = initProductCards
+type initialStateType = {
+	items: IProductCard[]
+	type_filter: string
+	search_filter: string
+}
+
+const initialState: initialStateType = {
+	items: initProductCards,
+	type_filter: 'Все типы',
+	search_filter: '',
+}
 
 export const cardsSlice = createSlice({
-	name: 'product_cards',
+	name: 'products',
 	initialState,
 	reducers: {
 		toggleFavoriteStatus: (state, action: PayloadAction<IProductCard>) => {
-			const index = state.findIndex(item => action.payload.id === item.id)
-			if (index !== -1) state[index].favorite = !state[index].favorite
+			const index = state.items.findIndex(item => action.payload.id === item.id)
+			if (index !== -1)
+				state.items[index].favorite = !state.items[index].favorite
 		},
 		SetAsPaid: (state, action: PayloadAction<IProductCard>) => {
-			const index = state.findIndex(item => action.payload.id === item.id)
-			if (index !== -1) state[index].payment = true
+			const index = state.items.findIndex(item => action.payload.id === item.id)
+			if (index !== -1) state.items[index].payment = true
 		},
 		toggleDealStatus: (state, action: PayloadAction<IProductCard>) => {
-			const index = state.findIndex(item => action.payload.id === item.id)
-			if (index !== -1) state[index].deal = !state[index].deal
+			const index = state.items.findIndex(item => action.payload.id === item.id)
+			if (index !== -1) state.items[index].deal = !state.items[index].deal
 		},
 	},
 })
