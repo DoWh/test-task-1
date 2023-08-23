@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { IProductCard } from '../../../models/IProductCard'
+import AddToDealsBtn from './AddToDealsBtn'
 import styles from './PaymentSection.module.css'
 
 interface IProp {
@@ -21,7 +22,7 @@ const PaymentSection: FC<IProp> = ({ data }) => {
 				<div>{data.price.toLocaleString('ru-RU')} ₽</div>
 			</div>
 			<div className={styles.payment__btns}>
-				<button>test1</button>
+				<AddToDealsBtn data={data} />
 				<button>test2</button>
 			</div>
 		</section>

@@ -10,7 +10,13 @@ export const cardsSlice = createSlice({
 	reducers: {
 		toggleFavoriteStatus: (state, action: PayloadAction<IProductCard>) => {},
 		togglePaymentStatus: (state, action: PayloadAction<IProductCard>) => {},
-		toggleOfferStatus: (state, action: PayloadAction<IProductCard>) => {},
+		toggleDealStatus: (state, action: PayloadAction<IProductCard>) => {
+			const index = state.findIndex(item => action.payload.id === item.id)
+			if (index !== -1) {
+				console.log(state)
+				state[index].offer = !state[index].offer
+			}
+		},
 	},
 })
 
