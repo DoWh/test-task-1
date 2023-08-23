@@ -1,7 +1,12 @@
 import { FC } from 'react'
+import ProductCardList from '../components/ProductCardList'
 
 const ProductsInWarehousePage: FC = () => {
-	return <div>ProductsInWarehousePage</div>
+	return (
+		<main>
+			<ProductCardList />
+		</main>
+	)
 }
 
 export default ProductsInWarehousePage
