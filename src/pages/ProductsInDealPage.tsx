@@ -3,7 +3,8 @@ import ProductCardList from '../components/ProductCardList'
 import { useAppSelector } from '../hooks/useAppSelector'
 
 const ProductsInDealPage: FC = () => {
-	const ProductList = useAppSelector(state => state.ProductCardsReducer.items)
+	let ProductList = useAppSelector(state => state.ProductCardsReducer.items)
+	ProductList = ProductList.filter(item => item.deal !== false)
 
 	return (
 		<main>
