@@ -10,18 +10,15 @@ export const cardsSlice = createSlice({
 	reducers: {
 		toggleFavoriteStatus: (state, action: PayloadAction<IProductCard>) => {
 			const index = state.findIndex(item => action.payload.id === item.id)
-			if (index !== -1) {
-				console.log(state)
-				state[index].favorite = !state[index].favorite
-			}
+			if (index !== -1) state[index].favorite = !state[index].favorite
 		},
-		SetAsPaid: (state, action: PayloadAction<IProductCard>) => {},
+		SetAsPaid: (state, action: PayloadAction<IProductCard>) => {
+			const index = state.findIndex(item => action.payload.id === item.id)
+			if (index !== -1) state[index].payment = true
+		},
 		toggleDealStatus: (state, action: PayloadAction<IProductCard>) => {
 			const index = state.findIndex(item => action.payload.id === item.id)
-			if (index !== -1) {
-				console.log(state)
-				state[index].deal = !state[index].deal
-			}
+			if (index !== -1) state[index].deal = !state[index].deal
 		},
 	},
 })
