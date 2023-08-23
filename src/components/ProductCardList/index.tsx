@@ -1,17 +1,22 @@
 import { FC } from 'react'
-import { useAppSelector } from '../../hooks/useAppSelector'
+import useFilteredProductBySearch from '../../hooks/useFilteredProductBySearch'
+import useFilteredProductByType from '../../hooks/useFilteredProductByType'
+import { IProductCard } from '../../models/IProductCard'
 import AppWidgetBar from '../AppWidgetBar'
 import ProductCard from '../ProductCard'
 
-const ProductCardList: FC = () => {
-	const ProductCardList = useAppSelector(
-		state => state.ProductCardsReducer.items
-	)
+interface IProp {
+	ProductList: IProductCard[]
+}
+
+const ProductCardList: FC<IProp> = ({ ProductList }) => {
+	ProductList = useFilteredProductBySearch(ProductList)
+	ProductList = useFilteredProductByType(ProductList)
 
 	return (
 		<>
 			<AppWidgetBar />
-			{ProductCardList.map(ProductData => (
+			{ProductList.map(ProductData => (
 				<ProductCard
 					data={ProductData}
 					key={ProductData.id}
