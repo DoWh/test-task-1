@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { useAppSelector } from '../../hooks/useAppSelector'
+import AppWidgetBar from '../AppWidgetBar'
 import ProductCard from '../ProductCard'
 
 const ProductCardList: FC = () => {
@@ -7,6 +8,7 @@ const ProductCardList: FC = () => {
 
 	return (
 		<>
+			<AppWidgetBar />
 			{ProductCardList.map(ProductData => (
 				<ProductCard
 					data={ProductData}
