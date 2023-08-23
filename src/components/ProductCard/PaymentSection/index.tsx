@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { IProductCard } from '../../../models/IProductCard'
 import AddToDealsBtn from './AddToDealsBtn'
+import AddToFavoriteBtn from './AddToFavoriteBtn'
 import styles from './PaymentSection.module.css'
 
 interface IProp {
@@ -23,7 +24,7 @@ const PaymentSection: FC<IProp> = ({ data }) => {
 			</div>
 			<div className={styles.payment__btns}>
 				<AddToDealsBtn data={data} />
-				<button>test2</button>
+				<AddToFavoriteBtn data={data} />
 			</div>
 		</section>
 	)

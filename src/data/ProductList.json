@@ -11,7 +11,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 2,
@@ -25,7 +25,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 3,
@@ -39,7 +39,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 4,
@@ -53,7 +53,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 5,
@@ -67,7 +67,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 6,
@@ -81,7 +81,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 7,
@@ -95,7 +95,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 8,
@@ -109,7 +109,7 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	},
 	{
 		"id": 9,
@@ -123,6 +123,6 @@
 		"count": 3,
 		"payment": false,
 		"favorite": false,
-		"offer": false
+		"deal": false
 	}
 ]

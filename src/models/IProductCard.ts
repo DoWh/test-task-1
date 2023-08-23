@@ -10,5 +10,5 @@ export interface IProductCard {
 	count: number
 	payment: boolean
 	favorite: boolean
-	offer: boolean
+	deal: boolean
 }

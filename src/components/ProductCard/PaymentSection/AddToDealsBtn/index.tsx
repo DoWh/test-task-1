@@ -15,7 +15,7 @@ const AddToDealsBtn: FC<IProp> = ({ data }) => {
 			className={styles.btn}
 			onClick={() => toggleDealStatus(data)}
 		>
-			{data.offer ? 'Удалить из сделок' : 'Добавить в сделки'}
+			{data.deal ? 'Удалить из сделок' : 'Добавить в сделки'}
 		</button>
 	)
 }

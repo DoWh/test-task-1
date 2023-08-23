@@ -1,0 +1,23 @@
+.btn {
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	border-radius: 10px;
+}
+
+.on {
+	background: #f4f5f9;
+}
+
+.on svg path {
+	fill: #2d3b87;
+}
+
+.off {
+	background: #2d3b87;
+}
+
+.off svg path {
+	fill: white;
+}
