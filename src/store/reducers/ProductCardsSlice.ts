@@ -31,6 +31,16 @@ export const cardsSlice = createSlice({
 			const index = state.items.findIndex(item => action.payload.id === item.id)
 			if (index !== -1) state.items[index].deal = !state.items[index].deal
 		},
+		changeSearchValue: (state, action: PayloadAction<string>) => {
+			if (state.search_filter === action.payload) {
+				return state
+			} else state.search_filter = action.payload
+		},
+		changeFilterValue: (state, action: PayloadAction<string>) => {
+			if (state.type_filter === action.payload) {
+				return state
+			} else state.type_filter = action.payload
+		},
 	},
 })
 

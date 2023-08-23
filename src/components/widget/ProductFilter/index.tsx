@@ -1,9 +1,21 @@
-import { FC } from 'react'
+import { FC, MouseEvent } from 'react'
+import { useActions } from '../../../hooks/useActions'
 import styles from './ProductFilter.module.css'
 
 const ProductFilter: FC = () => {
+	const { changeFilterValue } = useActions()
+
+	function FilterChange(event: MouseEvent<HTMLElement>) {
+		const target = event.target as HTMLElement
+		if (target.tagName !== 'LABEL') return null
+		changeFilterValue(target.innerHTML)
+	}
+
 	return (
-		<ul className={styles.filter}>
+		<ul
+			className={styles.filter}
+			onClick={FilterChange}
+		>
 			<li>
 				<input
 					type='radio'
