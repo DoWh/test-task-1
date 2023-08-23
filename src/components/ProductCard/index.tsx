@@ -2,6 +2,7 @@ import { FC } from 'react'
 import cardPNG from '../../assets/CardImg.png'
 import { IProductCard } from '../../models/IProductCard'
 import ImageSection from './ImageSection'
+import PaymentSection from './PaymentSection'
 import styles from './ProductCard.module.css'
 import ProfileSection from './ProfileSection'
 
@@ -15,6 +16,7 @@ const ProductCard: FC<IProp> = ({ data }) => {
 		<div className={styles.product_card}>
 			<ImageSection img={cardPNG} />
 			<ProfileSection data={data} />
+			<PaymentSection data={data} />
 		</div>
 	)
 }

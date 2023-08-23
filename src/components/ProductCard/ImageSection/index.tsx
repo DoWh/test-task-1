@@ -7,11 +7,13 @@ interface IProp {
 
 const ImageSection: FC<IProp> = ({ img }) => {
 	return (
-		<img
-			src={img}
-			alt=''
-			className={styles.img}
-		/>
+		<section>
+			<img
+				src={img}
+				alt=''
+				className={styles.img}
+			/>
+		</section>
 	)
 }
 

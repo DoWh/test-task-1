@@ -8,7 +8,7 @@ interface IProp {
 
 const ProfileSection: FC<IProp> = ({ data }) => {
 	return (
-		<div className={styles.profile}>
+		<section className={styles.profile}>
 			<div className={styles.profile__item}>
 				<label>Название:</label>
 				<div className={styles.profile__name}>{data.name}</div>
@@ -29,7 +29,7 @@ const ProfileSection: FC<IProp> = ({ data }) => {
 				<label>Описание:</label>
 				<div>{data.description}</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 
