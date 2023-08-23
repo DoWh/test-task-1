@@ -1,0 +1,20 @@
+.btn {
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: #2d3b87;
+	font-weight: 500;
+	cursor: pointer;
+	user-select: none;
+	min-width: 180px;
+}
+
+.on {
+	color: #969dc3;
+	background: #f4f5f9;
+}
+
+.off {
+	color: white;
+	background: #69c57f;
+}

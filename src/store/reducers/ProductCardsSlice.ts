@@ -15,7 +15,7 @@ export const cardsSlice = createSlice({
 				state[index].favorite = !state[index].favorite
 			}
 		},
-		togglePaymentStatus: (state, action: PayloadAction<IProductCard>) => {},
+		SetAsPaid: (state, action: PayloadAction<IProductCard>) => {},
 		toggleDealStatus: (state, action: PayloadAction<IProductCard>) => {
 			const index = state.findIndex(item => action.payload.id === item.id)
 			if (index !== -1) {

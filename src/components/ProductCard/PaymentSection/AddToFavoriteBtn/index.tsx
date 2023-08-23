@@ -5,11 +5,11 @@ import { useActions } from '../../../../hooks/useActions'
 import { IProductCard } from '../../../../models/IProductCard'
 import styles from './AddToFavoriteBtn.module.css'
 
-interface Props {
+interface Prop {
 	data: IProductCard
 }
 
-const AddToFavoriteBtn: FC<Props> = ({ data }) => {
+const AddToFavoriteBtn: FC<Prop> = ({ data }) => {
 	const { toggleFavoriteStatus } = useActions()
 
 	const statusOnOff = data.favorite ? styles.off : styles.on
