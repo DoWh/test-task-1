@@ -1,36 +1,36 @@
 .nav {
-	display: flex;
-	font-size: 13px;
-	font-weight: 500;
-	margin: 10px 0;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .nav__item {
-	padding: 15px;
-	border-radius: 10px;
-	cursor: pointer;
-	user-select: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
 }
 
 .nav__item:hover {
-	background: #f4f5f9;
+  background: #f4f5f9;
 }
 
 .nav__item a {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav__item a svg {
-	width: 25px;
-	height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .nav__item a div {
-	margin-top: 5px;
+  margin-top: 5px;
 }

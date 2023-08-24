@@ -6,24 +6,24 @@ import AppWidgetBar from '../AppWidgetBar'
 import ProductCard from '../ProductCard'
 
 interface IProp {
-	ProductList: IProductCard[]
+  ProductList: IProductCard[]
 }
 
 const ProductCardList: FC<IProp> = ({ ProductList }) => {
-	ProductList = useFilteredProductBySearch(ProductList)
-	ProductList = useFilteredProductByType(ProductList)
+  ProductList = useFilteredProductBySearch(ProductList)
+  ProductList = useFilteredProductByType(ProductList)
 
-	return (
-		<>
-			<AppWidgetBar />
-			{ProductList.map(ProductData => (
-				<ProductCard
-					data={ProductData}
-					key={ProductData.id}
-				/>
-			))}
-		</>
-	)
+  return (
+    <>
+      <AppWidgetBar />
+      {ProductList.map(ProductData => (
+        <ProductCard
+          data={ProductData}
+          key={ProductData.id}
+        />
+      ))}
+    </>
+  )
 }
 
 export default ProductCardList

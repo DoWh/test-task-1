@@ -1,23 +1,23 @@
 .filter {
-	list-style: none;
-	display: flex;
-	justify-content: flex-start;
-	background: #e0e3ee;
-	border-radius: 10px;
-	color: #969dc3;
-	padding: 0;
-	align-items: center;
-	min-height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  background: #e0e3ee;
+  border-radius: 10px;
+  color: #969dc3;
+  padding: 0;
+  align-items: center;
+  min-height: 40px;
 }
 .filter label {
-	padding: 12px;
-	cursor: pointer;
-	user-select: none;
+  padding: 12px;
+  cursor: pointer;
+  user-select: none;
 }
 .filter input {
-	display: none;
+  display: none;
 }
 
 .filter input:checked + label {
-	color: #2d3b87;
+  color: #2d3b87;
 }

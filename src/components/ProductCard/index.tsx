@@ -7,18 +7,18 @@ import styles from './ProductCard.module.css'
 import ProfileSection from './ProfileSection'
 
 interface IProp {
-	data: IProductCard
+  data: IProductCard
 }
 
 const ProductCard: FC<IProp> = ({ data }) => {
-	console.log(data)
-	return (
-		<div className={styles.product_card}>
-			<ImageSection img={cardPNG} />
-			<ProfileSection data={data} />
-			<PaymentSection data={data} />
-		</div>
-	)
+  console.log(data)
+  return (
+    <div className={styles.product_card}>
+      <ImageSection img={cardPNG} />
+      <ProfileSection data={data} />
+      <PaymentSection data={data} />
+    </div>
+  )
 }
 
 export default ProductCard

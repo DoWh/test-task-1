@@ -5,24 +5,24 @@ import ProductsInFavoritePage from './pages/ProductsInFavoritePage'
 import ProductsInWarehousePage from './pages/ProductsInWarehousePage'
 
 const rootRouter = createHashRouter([
-	{
-		path: '/',
-		element: <RootLayout />,
-		children: [
-			{
-				path: '',
-				element: <ProductsInWarehousePage />,
-			},
-			{
-				path: 'deals',
-				element: <ProductsInDealPage />,
-			},
-			{
-				path: 'favorites',
-				element: <ProductsInFavoritePage />,
-			},
-		],
-	},
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      {
+        path: '',
+        element: <ProductsInWarehousePage />,
+      },
+      {
+        path: 'deals',
+        element: <ProductsInDealPage />,
+      },
+      {
+        path: 'favorites',
+        element: <ProductsInFavoritePage />,
+      },
+    ],
+  },
 ])
 
 export default rootRouter

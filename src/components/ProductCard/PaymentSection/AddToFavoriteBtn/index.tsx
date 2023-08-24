@@ -6,24 +6,24 @@ import { IProductCard } from '../../../../models/IProductCard'
 import styles from './AddToFavoriteBtn.module.css'
 
 interface Prop {
-	data: IProductCard
+  data: IProductCard
 }
 
 const AddToFavoriteBtn: FC<Prop> = ({ data }) => {
-	const { toggleFavoriteStatus } = useActions()
+  const { toggleFavoriteStatus } = useActions()
 
-	const statusOnOff = data.favorite ? styles.off : styles.on
+  const statusOnOff = data.favorite ? styles.off : styles.on
 
-	return (
-		<button
-			className={styles.btn + ' ' + statusOnOff}
-			onClick={() => {
-				toggleFavoriteStatus(data)
-			}}
-		>
-			<ReactSVG src={favorite} />
-		</button>
-	)
+  return (
+    <button
+      className={styles.btn + ' ' + statusOnOff}
+      onClick={() => {
+        toggleFavoriteStatus(data)
+      }}
+    >
+      <ReactSVG src={favorite} />
+    </button>
+  )
 }
 
 export default AddToFavoriteBtn

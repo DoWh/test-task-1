@@ -5,10 +5,10 @@ import { actions as ProductCardsActions } from '../store/reducers/ProductCardsSl
 import { AppDispatchType } from '../types/index'
 
 const rootActions = {
-	...ProductCardsActions,
+  ...ProductCardsActions,
 }
 
 export const useActions = () => {
-	const dispatch: AppDispatchType = useDispatch<AppDispatchType>()
-	return useMemo(() => bindActionCreators(rootActions, dispatch), [dispatch])
+  const dispatch: AppDispatchType = useDispatch<AppDispatchType>()
+  return useMemo(() => bindActionCreators(rootActions, dispatch), [dispatch])
 }

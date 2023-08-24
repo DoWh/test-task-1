@@ -1,8 +1,8 @@
 .product_card {
-	display: flex;
-	align-items: space-between;
-	border: 1px solid #e0e3ee;
-	border-radius: 20px;
-	max-width: 1166px;
-	margin: 20px auto;
+  display: flex;
+  align-items: space-between;
+  border: 1px solid #e0e3ee;
+  border-radius: 20px;
+  max-width: 1166px;
+  margin: 20px auto;
 }

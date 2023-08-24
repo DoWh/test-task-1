@@ -7,11 +7,11 @@ import setupStore from './store/store'
 const store = setupStore()
 
 const App: FC = () => {
-	return (
-		<Provider store={store}>
-			<RouterProvider router={rootRouter} />
-		</Provider>
-	)
+  return (
+    <Provider store={store}>
+      <RouterProvider router={rootRouter} />
+    </Provider>
+  )
 }
 
 export default App

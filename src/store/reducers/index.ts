@@ -2,7 +2,7 @@ import { combineReducers } from '@reduxjs/toolkit'
 import { reducer as ProductCardsReducer } from './ProductCardsSlice'
 
 const rootReducer = combineReducers({
-	ProductCardsReducer,
+  ProductCardsReducer,
 })
 
 export default rootReducer
