@@ -1,2 +1,5 @@
-* text=auto eol=lf
-*.* diff indent_style=space indent_size=2
+*.js diff=js indent_style=space indent_size=2
+*.ts diff=typescript indent_style=space indent_size=2
+*.html diff=html indent_style=space indent_size=2
+*.tsx diff=typescript indent_style=space indent_size=2
+*.jsx diff=jsx indent_style=space indent_size=2
