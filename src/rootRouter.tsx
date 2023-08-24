@@ -1,10 +1,10 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import RootLayout from './layouts/rootLayout'
 import ProductsInDealPage from './pages/ProductsInDealPage'
 import ProductsInFavoritePage from './pages/ProductsInFavoritePage'
 import ProductsInWarehousePage from './pages/ProductsInWarehousePage'
 
-const rootRouter = createBrowserRouter([
+const rootRouter = createHashRouter([
 	{
 		path: '/',
 		element: <RootLayout />,
