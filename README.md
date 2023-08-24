@@ -1,5 +1,9 @@
 # 🚀 Test Task: Frontend Developer React.js
 
+## 🎉 Result of the Completed Test Task:
+
+You can view the live project [here](https://dowh.github.io/test-task-1/).
+
 ## 🎨 Description:
 
 **Objective**: Create an SPA application using React.js.
