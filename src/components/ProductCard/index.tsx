@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, memo } from 'react'
 import cardPNG from '../../assets/CardImg.png'
 import { IProductCard } from '../../models/IProductCard'
 import ImageSection from './ImageSection'
@@ -21,4 +21,4 @@ const ProductCard: FC<IProp> = ({ data }) => {
   )
 }
 
-export default ProductCard
+export default memo(ProductCard)
